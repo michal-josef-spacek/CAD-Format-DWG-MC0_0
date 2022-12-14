@@ -1,0 +1,64 @@
+NAME
+    CAD::Format::DWG::MC0_0 - Read AutoCAD 1.0 DWG file.
+
+SYNOPSIS
+     use CAD::Format::DWG::MC0_0;
+
+     my $dwg = CAD::Format::DWG::MC0_0->new;
+     my $dwg = CAD::Format::DWG::MC0_0->from_file($dwg_file);
+     my $entities_ar = $dwg->entities;
+     my $header = $dwg->header;
+
+DESCRIPTION
+    In distribution is kaitai structure definition file dwg_mc0_0.ksy which
+    described AutoCAD DWG format version MC0.0.
+
+METHODS
+  "new"
+     my $dwg = CAD::Format::DWG::MC0_0->new;
+
+    Constructor.
+
+    Returns instance of object.
+
+  "from_file"
+     my $dwg = CAD::Format::DWG::MC0_0->from_file($dwg_file);
+
+    Create instance of object from DWG file.
+
+    Returns instance of object.
+
+  "entities"
+     my $entities_ar = $dwg->entities;
+
+    Get list of entities in DWG file.
+
+    Returns reference to array with CAD::Format::DWG::MC0_0::Entity
+    instances.
+
+  "header"
+     my $header = $dwg->header;
+
+    Get header of DWG file.
+
+    Returns instance of CAD::Format::DWG::MC0_0::Header object.
+
+DEPENDENCIES
+    IO::KaitaiStruct.
+
+REPOSITORY
+    <https://github.com/michal-josef-spacek/CAD-Format-DWG-MC0_0.git>
+
+AUTHOR
+    Michal Josef Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    © 2022 Michal Josef Špaček
+
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
