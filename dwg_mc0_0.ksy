@@ -1,5 +1,5 @@
 meta:
-  id: dwg_0000
+  id: dwg_mc0_0
   title: AutoCAD drawing (MC0.0)
   application: AutoCAD
   file-extension:
