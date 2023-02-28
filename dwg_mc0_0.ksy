@@ -4,15 +4,15 @@ meta:
   application: AutoCAD
   file-extension:
     - dwg
-  license: CC0-1.0
   xref:
     justsolve: DWG
-    pronom:
-      fmt: 21
     mime:
       - application/x-dwg
       - image/vnd.dwg
+    pronom:
+      fmt: 21
     wikidata: Q27863105
+  license: CC0-1.0
   endian: le
 seq:
   - id: header
